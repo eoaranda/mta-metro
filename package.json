@@ -1,14 +1,23 @@
 {
   "name": "mta-metro",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "MTA Metro Rail Roads API Library",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/eaaranda/mta-metro.git"
   },
+  "engines": {
+    "node": ">=8.x"
+  },
   "keywords": [
-    "MTA","Metro","North","LIRR","Subway","transit","NYC"
+    "MTA",
+    "Metro",
+    "North",
+    "LIRR",
+    "Subway",
+    "transit",
+    "NYC"
   ],
   "author": "Edgar Aranda <ing.oaguirre@gmail.com>",
   "license": "MIT",
@@ -16,8 +25,15 @@
   "bugs": {
     "url": "https://github.com/eaaranda/mta-metro/issues"
   },
+  "scripts": {
+    "test": "mocha -R spec test/unit.js"
+  },
   "dependencies": {
     "node-fetch": "^2.0.0",
     "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1"
   }
 }
